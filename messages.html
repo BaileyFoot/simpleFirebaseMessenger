@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+		<title>Messenger</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <!-- Firebase App is always required and must be first -->
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+    <!-- Additional services we want to use -->
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+
+    <script src="firebaseConfig.js"></script>
+
+    <!-- Message functionality -->
+    <script src="databaseReadAndWrite.js"></script>
+
+    <script src="authentication.js"></script>
+  </head>
+  <body>
+    <div id="messenger">
+      <p id="messageViewer"></p>
+      <input type="text" id="messageField" placeholder="Message">
+      <input type="submit" onclick="addMessageToDatabase()" value="Send">
+      <input type="submit" onclick="logOutUser()" value="log out">
+    </div>
+  </body>
+</html>
