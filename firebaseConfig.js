@@ -1,3 +1,5 @@
+//This file contains the firebase application config  as well as the Initialization statement of the application. 
+
 //window.alert("firebaseConfig.js");
 
 // Initialize Firebase

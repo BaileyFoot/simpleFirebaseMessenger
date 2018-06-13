@@ -1,3 +1,5 @@
+//This file manages user logouts as well as any script that is executed on login or logout. 
+
 //window.alert("databaseReadAndWrite.js");
 
 firebase.auth().onAuthStateChanged(function(user) {
@@ -11,8 +13,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     var uid = user.uid;
     var providerData = user.providerData;
 
-    console.log(displayName, "is logged in");
-    // ...
+    //console.log(displayName, "is logged in");
   } else {
 
     
